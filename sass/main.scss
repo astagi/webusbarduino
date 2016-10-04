@@ -1,0 +1,21 @@
+.block {
+    &__element {
+        display: flex;
+    }
+    &--modifier {
+    }
+}
+
+.row {
+  lost-utility: clearfix;
+}
+
+.quarter {
+  lost-column: 1/4 0;
+  background-color: yellow;
+}
+
+.half {
+  lost-column: 1/2 0;
+  background-color: red;
+}

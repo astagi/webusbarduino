@@ -1,0 +1,21 @@
+{
+  "name": "postcss-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "cssnano": "^3.7.6",
+    "grunt": "^1.0.1",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.2.1",
+    "load-grunt-tasks": "^3.5.2",
+    "lost": "^7.1.0",
+    "pixrem": "^3.0.2"
+  }
+}
