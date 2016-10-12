@@ -1,15 +1,17 @@
-# Playing with PostCSS
+# WebUSB ♥ Arduino
 
-Some experiment with PostCSS
-
-You need grunt and sass installed
+A little demo with WebUSB and Arduino.
 
 ## Install
 
 	$ npm install
 
-## Excecute
+# Compile
 
 	$ grunt
 
-And then open index.html
+## Excecute
+
+	$ npm run server
+
+License MIT

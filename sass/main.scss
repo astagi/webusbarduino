@@ -1,21 +1,25 @@
-.block {
-    &__element {
-        display: flex;
-    }
-    &--modifier {
-    }
-}
-
 .row {
   lost-utility: clearfix;
 }
 
-.quarter {
-  lost-column: 1/4 0;
+.semaphore {
+  lost-column: 1/3 10px;
+  text-align: center;
+}
+
+.red-light {
+  @extend .semaphore;
+  background-color: red;
+  color: white;
+}
+
+.yellow-light {
+  @extend .semaphore;
   background-color: yellow;
 }
 
-.half {
-  lost-column: 1/2 0;
-  background-color: red;
+.green-light {
+  @extend .semaphore;
+  background-color: green;
+  color: white;
 }

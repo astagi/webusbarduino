@@ -1,9 +1,15 @@
 module.exports = grunt => {
 
   require('load-grunt-tasks')(grunt);
-  require('postcss');
 
   grunt.initConfig({
+
+    ts: {
+      default : {
+        src: ["ts/**/*.ts", "!ts/.baseDir.ts"],
+        dest: "dist/js"
+      }
+    },
 
     sass: {
         options: {
@@ -36,6 +42,7 @@ module.exports = grunt => {
     }
   });
 
-  grunt.registerTask('default', ['sass', 'postcss']);
-
+  grunt.registerTask('js', ['ts']);
+  grunt.registerTask('styles', ['sass', 'postcss']);
+  grunt.registerTask('default', ['style', 'js']);
 };

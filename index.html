@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="dist/css/main.css">
-    <title>Title of the document</title>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script type="text/javascript">
+      System.config({
+        baseURL: 'dist/js',
+        defaultJSExtensions: true,
+        transpiler: "typescript",
+      });
+      System.import('main.js');
+    </script>
+    <title>WebUSB ♥ Arduino</title>
   </head>
 
   <body>
     <section class="row">
-      <div class="quarter">1</div>
-      <div class="half">2</div>
-      <div class="quarter">3</div>
-    </section>    
+      <div id="red" class="semaphore red-light">RED</div>
+      <div id="yellow" class="semaphore yellow-light">YELLOW</div>
+      <div id="green" class="semaphore green-light">GREEN</div>
+    </section>
+    <button id="connect">Connect</button> <span id="status"></span>
   </body>
 
 </html>

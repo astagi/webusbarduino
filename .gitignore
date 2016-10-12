@@ -1,2 +1,9 @@
+# Compiled code
 dist/
+
+# Libraries
 node_modules/
+
+# TS stuff
+ts/.baseDir.ts #See https://github.com/grunt-ts/grunt-ts/issues/77
+.tscache

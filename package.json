@@ -1,21 +1,24 @@
 {
-  "name": "postcss-sample",
+  "name": "webusblovesarduino",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/js/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "python -m SimpleHTTPServer"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Andrea Stagi",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.5.0",
     "cssnano": "^3.7.6",
     "grunt": "^1.0.1",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^1.2.1",
+    "grunt-ts": "^6.0.0-beta.3",
     "load-grunt-tasks": "^3.5.2",
     "lost": "^7.1.0",
-    "pixrem": "^3.0.2"
+    "pixrem": "^3.0.2",
+    "typescript": "^2.0.3"
   }
 }
