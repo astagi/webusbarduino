@@ -1,7 +1,7 @@
 #include <WebUSB.h>
 
 const WebUSBURL URLS[] = {
-  { 1, "webusb.github.io/arduino/demos/" },
+  { 1, "astagi.github.io/webusbarduino/" },
   { 0, "localhost:8000" },
 };
 
@@ -45,10 +45,10 @@ void loop() {
         break;
       case 2:
         digitalWrite(yellowPin, HIGH);
-        break;   
+        break;
       case 3:
         digitalWrite(greenPin, HIGH);
-        break;     
+        break;
     }
     Serial.flush();
   }
