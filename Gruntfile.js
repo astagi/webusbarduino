@@ -44,5 +44,5 @@ module.exports = grunt => {
 
   grunt.registerTask('js', ['ts']);
   grunt.registerTask('styles', ['sass', 'postcss']);
-  grunt.registerTask('default', ['style', 'js']);
+  grunt.registerTask('default', ['styles', 'js']);
 };
