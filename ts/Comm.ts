@@ -1,13 +1,8 @@
-/*export default class Comm {
-    static numberRegexp = /^[0-9]+$/;
-    isAcceptable(s: string) {
-        return s.length === 5 && Comm.numberRegexp.test(s);
-    }
-}*/
+/// <reference path="../typings/webusb/webusb.d.ts" />
 
 class CommPort {
 
-  device_: Object;
+  device_: UsbDevice;
   onReceive: Function;
   onReceiveError: Function;
 
