@@ -23,5 +23,9 @@
   },
   "dependencies": {
     "@types/es6-promise": "0.0.32"
+  },
+  "repository": {
+    "url": "git@github.com:astagi/webusbarduino.git",
+    "type": "git"
   }
 }
